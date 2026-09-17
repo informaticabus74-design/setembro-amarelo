@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Histórias que inspiram — espaço de depoimentos do Setembro Amarelo.">
+  <title>Conecta — Histórias que inspiram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="navbar">
+      <a class="brand" href="#" aria-label="Conecta - início">
+        <span class="brand-heart">♥</span>
+        <span>Conecta</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos" class="active">Conteúdos</a>
+        <a href="#ajuda">Ajuda</a>
+        <a href="#contato">Contato</a>
+        <a href="#compartilhar" class="nav-cta">Falar agora</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">SETEMBRO AMARELO • VOCÊ NÃO ESTÁ SOZINHO</span>
+        <h1>Histórias que<br><span>inspiram</span></h1>
+        <p>Cada história é única. Compartilhar também é uma forma de ajudar.</p>
+      </div>
+      <div class="hero-campaign" aria-label="Campanha Setembro Amarelo">
+        <img src="assets/coracao-setembro-amarelo.png" alt="Coração abraçando a si mesmo com a mensagem Você não está sozinho. Setembro Amarelo.">
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="depoimentos" aria-labelledby="titulo-depoimentos">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">DEPOIMENTOS</span>
+          <h2 id="titulo-depoimentos">Experiências que podem fazer a diferença</h2>
+        </div>
+        <div class="carousel-controls" aria-label="Controles dos depoimentos">
+          <button class="arrow" id="prevBtn" aria-label="Depoimento anterior">‹</button>
+          <button class="arrow" id="nextBtn" aria-label="Próximo depoimento">›</button>
+        </div>
+      </div>
+
+      <div class="carousel-window">
+        <div class="cards" id="cards">
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>Acho que oq mais me marcava eram os ataques de pânico
+
+A primeira vez que tive, senti que ia morrer, mesmo sabendo que não ia. É como se você estivesse tentando respirar por um canudo no oceano profundo, com a pressão sob seu pulmão A primeira vez que tive foi pra apresentar um trabalho, e após isso, passei a ter medo de ter outro ataque de pânico
+
+Então o maior medo era quando ele fosse acontecer, oq me deixava sob vigilância constante Passei a ter medo de apresentar trabalhos e só de ir a escola já ficava com medo de outro acontecer, pois associei o local ao ataque de pânico.</p>
+            <footer>— Estudante, Anônimo</footer>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>É super normal, faz parte de quem "somos" e não devemos nos sentir piores por tal fato.
+
+Apenas devemos ver formas de lidar e de nunca deixar os pensamentos ruins tomarem conta de
+
+você!</p>
+            <footer>— Estudante, Anônimo </footer>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>Agora eu tô aqui tentando fingir que tá tudo bem, mas minha cabeça não para um segundo. Parece que tem mil pensamentos acontecendo ao mesmo tempo e eu não consigo desligar nenhum deles. Meu coração tá acelerado, meu peito apertado e eu sinto um medo enorme sem nem saber exatamente do quê. Eu queria conseguir descansar minha mente, mas ela me faz pensar em tudo que pode dar errado, me faz duvidar de mim mesma e me deixa cansada o tempo todo. O pior é que ninguém percebe, porque por fora eu continuo sorrindo e agindo normalmente, mas por dentro eu tô lutando contra uma tempestade que não acaba. Às vezes eu só queria sentir um pouco de paz e parar de carregar esse peso que parece ficar maior a cada dia.</p>
+            <footer>— Estudante, Anônimo </footer>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>não tente lutar contra cada pensamento que aparece na sua cabeça. Nem todo pensamento é uma verdade, e nem toda preocupação vai acontecer. Quando a ansiedade vier, tente focar no que está acontecendo agora, neste momento, e seja paciente consigo mesma. Você não precisa resolver todos os problemas de uma vez. Um passo de cada vez já é suficiente. E lembre-se: pedir ajuda quando o peso estiver grande demais também é um ato de coragem, não de fraqueza</p>
+            <footer>— Estudante, Anônimo</footer>
+          </article>
+        </div>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Selecionar depoimento">
+        <button class="dot active" data-index="0" aria-label="Depoimento 1"></button>
+        <button class="dot" data-index="1" aria-label="Depoimento 2"></button>
+        <button class="dot" data-index="2" aria-label="Depoimento 3"></button>
+        <button class="dot" data-index="3" aria-label="Depoimento 4"></button>
+      </div>
+    </section>
+
+    <section class="share-card" id="compartilhar">
+      <div class="share-icon" aria-hidden="true">➤</div>
+      <div class="share-text">
+        <h3>Sua história também importa.</h3>
+        <p>Se quiser, compartilhe sua experiência de forma anônima.</p>
+      </div>
+      <button class="primary-btn" id="openModal">Compartilhar minha história</button>
+    </section>
+
+    <section class="support-section" id="ajuda">
+      <div class="support-icon">♡</div>
+      <div>
+        <span class="section-label">PRECISA DE AJUDA?</span>
+        <h2>Conversar pode ser o primeiro passo.</h2>
+        <p>Se você estiver passando por um momento difícil, procure alguém de confiança ou um serviço de apoio.</p>
+      </div>
+      <a class="outline-btn" href="tel:188">CVV • 188</a>
+    </section>
+
+    <section class="info-section" id="sobre">
+      <div>
+        <span class="section-label">SOBRE O PROJETO</span>
+        <h2>Ouvir sem julgar também é cuidar.</h2>
+      </div>
+      <p>Este espaço foi pensado para valorizar experiências reais e mostrar que pedir ajuda não é sinal de fraqueza. Os depoimentos apresentados são exemplos ilustrativos.</p>
+    </section>
+
+    <footer class="footer" id="contato">
+      <span>Conecta • Setembro Amarelo</span>
+      <span>Desenvolvido por: Amanda Barbosa, Estefani Nascimento, Gabriele Souto, Giselly Raquel, Helio Cesar, Kethellyn Gabriele, Sonaly Nayara, Thielly Macedo.</span> 
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn" id="closeModal" aria-label="Fechar">×</button>
+      <span class="section-label">COMPARTILHE</span>
+      <h2 id="modalTitle">Sua história importa.</h2>
+      <p class="modal-intro">Escreva apenas o que você se sentir confortável em compartilhar.</p>
+
+     <a class="formulario" href="https://docs.google.com/forms/d/e/1FAIpQLSf11nlWqH_5v_KcUIelnZpn6lyYD8rvYEELtiL4L11DXhioKg/closedform">Clique aqui!</a>
+
+      <div class="success-message" id="successMessage">
+        <span>✓</span>
+        <div>
+          <strong>Obrigado por compartilhar.</strong>
+          <p>Na versão demonstrativa, sua história não é enviada para nenhum servidor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
